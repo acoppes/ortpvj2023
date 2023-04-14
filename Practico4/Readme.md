@@ -8,6 +8,8 @@ Poner en práctica los conocimientos de:
 * User Interface 
 * Persistencia básica y pasaje de datos entre escenas
 
+--- 
+
 ## Ejercicios
 
 Comenzar los ejercicios en un nuevo proyecto llamado `Practico4`. Los ejercicios Bonus son opcionales para que cada uno haga luego de la clase.
@@ -264,16 +266,18 @@ public class Resultados : MonoBehaviour
 5. Ejecutar
 6. Configurar como primera escena de la build Resultados y luego crear una build windows y ejecutar.
 
+---
+
 ## Bonus tracks
 
 ### Ejercicio 1.1
 
-> Agregarle a la cámara un movimiento, con velocidad, y modificar el script para que la cámara se mueva hacia la posición del personaje a lo largo del tiempo, no de manera instantánea.
+Agregarle a la cámara un movimiento, con velocidad, y modificar el script para que la cámara se mueva hacia la posición del personaje a lo largo del tiempo, no de manera instantánea.
 
 ### Ejercicio 3b.1
 
-> El juego consiste ahora en recolectar todas las monedas en menos de un tiempo determinado. Agregar una cuenta regresiva y mostrarla en la UI, en caso de que el jugador no logra recolectar todas las monedas antes de ese tiempo, el juego muestra los resultados con un GAME OVER y no se persisten las monedas totales. En caso de recolectar todo en tiempo y forma, el juego muestra la ventana de resultados con un VICTORY y persiste los datos de monedas. 
+El juego consiste ahora en recolectar todas las monedas en menos de un tiempo determinado. Agregar una cuenta regresiva y mostrarla en la UI, en caso de que el jugador no logra recolectar todas las monedas antes de ese tiempo, el juego muestra los resultados con un GAME OVER y no se persisten las monedas totales. En caso de recolectar todo en tiempo y forma, el juego muestra la ventana de resultados con un VICTORY y persiste los datos de monedas. 
 
 ### Ejercicio 3b.2
 
-> Al resultado del Ejercicio anterior, modificar el script Juego para que cree en el Awake Monedas aleatorias (cantidad y ubicación) usando el prefab Moneda.
+Al resultado del Ejercicio anterior, modificar el script Juego para que cree en el Awake Monedas aleatorias (cantidad y ubicación) usando el prefab Moneda.

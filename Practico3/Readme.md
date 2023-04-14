@@ -13,7 +13,6 @@ Poner en práctica los conocimientos de:
 
 Comenzar los ejercicios en un nuevo proyecto llamado `Practico3`. Los ejercicios Bonus son opcionales para que cada uno haga luego de la clase.
 
---- 
 ### Ejercicio 1
 
 Vamos a crear dos elementos y vamos a detectar cuando el mouse está por arriba para seleccionarlos como si fuera un juego de estrategia o una carta de un juego como el Heartstone, con nuestro sistema de colisiones para ir elaborando para el obligatorio.
@@ -398,11 +397,13 @@ public class MovimientoAuto : MonoBehaviour
 
 > ¿Porque “derrapa” el auto si estamos avanzando y giramos?
 
+--- 
+
 ## Bonus tracks
 
 ### Ejercicio 1.1
 
-> Al presionar el botón derecho del mouse en la pantalla el personaje seleccionado se mueve, a lo largo del `tiempo`, desde donde está actualmente hasta la ubicación indicada a una velocidad constante.
+Al presionar el botón derecho del mouse en la pantalla el personaje seleccionado se mueve, a lo largo del tiempo, desde donde está actualmente hasta la ubicación indicada a una velocidad constante.
 
 ### Ejercicio 1.2
 
