@@ -402,7 +402,7 @@ public class MovimientoAuto : MonoBehaviour
 
 ### Ejercicio 1.1
 
-Al presionar el botón derecho del mouse en la pantalla el personaje seleccionado se mueve, a lo largo del tiempo, desde donde está actualmente hasta la ubicación indicada a una velocidad constante.
+> Al presionar el botón derecho del mouse en la pantalla el personaje seleccionado se mueve, a lo largo del `tiempo`, desde donde está actualmente hasta la ubicación indicada a una velocidad constante.
 
 ### Ejercicio 1.2
 
