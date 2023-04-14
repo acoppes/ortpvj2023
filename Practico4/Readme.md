@@ -14,7 +14,7 @@ Comenzar los ejercicios en un nuevo proyecto llamado `Practico4`. Los ejercicios
 
 ### Ejercicio 1
 
-En nuestro juego survival, nuestro personaje se mueve en un bosque. Hacer una escena con árboles y un personaje con movimiento, similar al [Ejercicio2](../Practico3/Readme.md#ejercicio-2) del práctico 3, y agregarle a la cámara una lógica que se ubique donde está el personaje.
+> En nuestro juego survival, nuestro personaje se mueve en un bosque. Hacer una escena con árboles y un personaje con movimiento, similar al [Ejercicio2](../Practico3/Readme.md#ejercicio-2) del práctico 3, y agregarle a la cámara una lógica que se ubique donde está el personaje.
 
 1. Crear estructura con escena para ejercicio 1.
 2. Crear prefab para el Personaje agregarle un `SpriteRenderer` y crear un `Sprite` con el menu de `Create/2D/Sprites/` de tipo hexágono. Configurar al personaje para tener el hexágono.
@@ -81,7 +81,7 @@ public class Follower : MonoBehaviour
 
 ### Ejercicio 2
 
-En el bosque hay monedas tiradas y el personaje deberá agarrarlas y el jugador podrá ver en pantalla cuantas monedas tiene.
+> En el bosque hay monedas tiradas y el personaje deberá agarrarlas y el jugador podrá ver en pantalla cuantas monedas tiene.
 
 1. Crear una nueva estructura para Ejercicio 2, vamos a reusar Control, Movimiento y Follower del Ejercicio 1 y el prefab de árbol.  Vamos a crear un nuevo prefab de personaje igual al del Ejercicio 1.
 2. Vamos a crear un nuevo prefab llamado Moneda que tiene un SpriteRenderer con un Sprite de tipo circulo, creado con el menu Create, asignarle el sprite y colorearlo de amarillo. Instanciar monedas en escena a gusto.
@@ -170,7 +170,7 @@ public class Moneda : MonoBehaviour
 
 ### Ejercicio 3a
 
-Vamos a agregar persistencia para que el jugador pueda continuar su partida donde la dejó y agarrar cada vez más monedas.
+> Vamos a agregar persistencia para que el jugador pueda continuar su partida donde la dejó y agarrar cada vez más monedas.
 
 1. Crear nueva estructura y escena para Ejercicio3 a partir de la escena de Ejercicio2.
 2. Crear un nuevo script Persistidor y agregarlo a la instancia de personaje en la escena. Este script va a responder al mismo callback de agarrar una moneda y utilizar los PlayerPrefs para salvar las monedas de personaje. Aparte, en el Awake o Start va a leer de PlayerPrefs y asignarle la monedas guardadas a personaje.
@@ -199,7 +199,7 @@ public class Persistidor : MonoBehaviour
 
 ### Ejercicio 3b
 
-Cada partida consiste en que el jugador agarre todas las monedas de la escena, una vez logrado ese objetivo, el juego presenta una pantalla con el resultado de cantidad de monedas recolectadas y la opción de jugar un nuevo nivel.
+> Cada partida consiste en que el jugador agarre todas las monedas de la escena, una vez logrado ese objetivo, el juego presenta una pantalla con el resultado de cantidad de monedas recolectadas y la opción de jugar un nuevo nivel.
 
 1. Crear una nueva escena llamada Resultados
 2. Crear un script llamado Juego que cuente la cantidad de monedas en escena, en caso de no haber ninguna más, carga la escena llamada Resultados. Para esto podemos usar FindObjectsOfType<Moneda>(). Crear un GameObject en la escena Ejercicio3 y agregarle el script.
@@ -268,12 +268,12 @@ public class Resultados : MonoBehaviour
 
 ### Ejercicio 1.1
 
-    Agregarle a la cámara un movimiento, con velocidad, y modificar el script para que la cámara se mueva hacia la posición del personaje a lo largo del tiempo, no de manera instantánea.
+> Agregarle a la cámara un movimiento, con velocidad, y modificar el script para que la cámara se mueva hacia la posición del personaje a lo largo del tiempo, no de manera instantánea.
 
 ### Ejercicio 3b.1
 
-    El juego consiste ahora en recolectar todas las monedas en menos de un tiempo determinado. Agregar una cuenta regresiva y mostrarla en la UI, en caso de que el jugador no logra recolectar todas las monedas antes de ese tiempo, el juego muestra los resultados con un GAME OVER y no se persisten las monedas totales. En caso de recolectar todo en tiempo y forma, el juego muestra la ventana de resultados con un VICTORY y persiste los datos de monedas. 
+> El juego consiste ahora en recolectar todas las monedas en menos de un tiempo determinado. Agregar una cuenta regresiva y mostrarla en la UI, en caso de que el jugador no logra recolectar todas las monedas antes de ese tiempo, el juego muestra los resultados con un GAME OVER y no se persisten las monedas totales. En caso de recolectar todo en tiempo y forma, el juego muestra la ventana de resultados con un VICTORY y persiste los datos de monedas. 
 
 ### Ejercicio 3b.2
 
-    Al resultado del Ejercicio anterior, modificar el script Juego para que cree en el Awake Monedas aleatorias (cantidad y ubicación) usando el prefab Moneda.
+> Al resultado del Ejercicio anterior, modificar el script Juego para que cree en el Awake Monedas aleatorias (cantidad y ubicación) usando el prefab Moneda.
