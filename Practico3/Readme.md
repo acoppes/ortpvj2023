@@ -106,9 +106,9 @@ public bool Collides(Vector2 point)
 
 Vamos a implementar un personaje controlable con teclado, con las teclas WASD o flechas y vamos a detectar cuando entra y sale de un área de juego.
 
-1. Crear una estructura de directorios para el Ejercicio2 con su escena también.
+1. Crear una estructura de directorios para el Ejercicio 2 con su escena también.
 2. Copiar el prefab del ejercicio1 o bien crear uno nuevo configurado similar.
-3. Crear dos nuevos scripts, uno llamado Movimiento con un campo speed de tipo float configurable en editor y otro campo llamado dirección de tipo Vector3 publico pero no mostrable en editor, y agregarle una lógica en el FixedUpdate que mueva al personaje en base a la dirección y la velocidad.
+3. Crear dos nuevos scripts, uno llamado `Movimiento` con un campo `speed` de tipo `float` configurable en editor y otro campo llamado `direction` de tipo `Vector3` publico pero no mostrable en editor, y agregar una lógica en el `FixedUpdate` que mueva al personaje en base a la dirección y la velocidad.
 
 ```csharp
 public class Movimiento : MonoBehaviour
@@ -126,7 +126,7 @@ public class Movimiento : MonoBehaviour
 }
 ```
 
-4. Y el otro script llamado ControlTeclado, que en base al uso de ejes de input cambie la direccion de movimiento de la clase Movimiento.
+4. Y el otro script llamado `ControlTeclado`, que en base al uso de ejes de input cambie la direccion de movimiento de la clase `Movimiento`.
 
 ```csharp
 public class ControlTeclado : MonoBehaviour
@@ -149,8 +149,14 @@ public class ControlTeclado : MonoBehaviour
 ```
 
 5. Agregar ambos scripts al prefab nuevo de Ejercicio2 y configurarle una velocidad, ejecutar. Probar modificar distintos valores como el Gravity, Sensitivity y Dead de los ejes en el Input Manager para ver como se comporta.
-6. Crear un nuevo prefab llamado Trampa que solo tenga SpriteRenderer y RectBounds.
-7. Crear y agregar un nuevo script llamado Trampa que al detectar al personaje en colisión (rect vs rect) se coloree en rojo sin opacidad, y cuando no lo detecte se quede con mitad de opacidad. Etiquetar al personaje con la etiqueta Player.
+6. Crear un nuevo prefab llamado `Trampa` que solo tenga `SpriteRenderer` y `RectBounds`.
+7. Crear y agregar un nuevo script llamado `Trampa` que al detectar al personaje en colisión (rect vs rect) se coloree en rojo sin opacidad, y cuando no lo detecte se quede con mitad de opacidad. Etiquetar al personaje con la etiqueta Player.
+
+<p align="center">
+  <img src="images/etiquetar-player.png" title="Como etiquetar player" alt="Imagen mostrando como etiquetar player"/>
+</p>
+
+<!-- ![Imagen mostrando como etiquetar player](images/etiquetar-player.png "Como etiquetar player") -->
 
 ```csharp
 public class Trampa : MonoBehaviour
@@ -176,7 +182,7 @@ public class Trampa : MonoBehaviour
 }
 ```
 
-8. Implementar la detección de rectángulo con rectángulo en el RectBounds. Primero crear una estructura nueva llamada Bounds, auxiliar y luego implementar el método sobrecargado en RectBounds.
+8. Implementar la detección de rectángulo con rectángulo en el `RectBounds`. Primero crear una estructura nueva llamada `Bounds`, auxiliar y luego implementar el método sobrecargado en `RectBounds`.
 
 ```csharp
 public struct Bounds
@@ -230,9 +236,9 @@ public bool Collides(RectBounds rect)
 Queremos hacer un juego de carreras ahora, vamos a agregar controles nuevos, opcionales, que permitan rotar la dirección con AD y avanzar y retroceder con WS como si fuera un vehículo.
 
 1. Crear estructura para Ejercicio3.
-2. Crear un nuevo prefab de Personaje, similar al de Ejercicio2 pero sin el ControlTeclado ni el Movimiento.
-3. Crear dos nuevos scripts, ControlAuto y MovimientoAuto y agregarlos al prefab.
-4. Agregar a MovimientoAuto una lógica que rote el ángulo al cual apunta dado un valor de rotacion y que avance o retroceda dado un valor de forward. También vamos a hacer que se modifique el ángulo del transform para que se vea visualmente hacia donde estamos apuntando.
+2. Crear un nuevo prefab de Personaje, similar al de Ejercicio2 pero sin el `ControlTeclado` ni el `Movimiento`.
+3. Crear dos nuevos scripts, `ControlAuto` y `MovimientoAuto` y agregarlos al prefab.
+4. Agregar a `MovimientoAuto` una lógica que rote el ángulo al cual apunta dado un valor de rotacion y que avance o retroceda dado un valor de forward. También vamos a hacer que se modifique el ángulo del transform para que se vea visualmente hacia donde estamos apuntando.
 
 ```csharp
 public class MovimientoAuto : MonoBehaviour
@@ -275,7 +281,7 @@ public class MovimientoAuto : MonoBehaviour
 }
 ```
 
-5. Agregar a ControlAuto una lógica que al apretar AD modifique el valor de rotate para indicar un giro y con WS ir hacia adelante o hacia atrás. No usamos los ejes porque no queremos la aceleración de los controles virtuales.
+5. Agregar a `ControlAuto` una lógica que al apretar AD modifique el valor de rotate para indicar un giro y con WS ir hacia adelante o hacia atrás. No usamos los ejes porque no queremos la aceleración de los controles virtuales.
 
 ```csharp
 public class ControlAuto : MonoBehaviour
@@ -314,7 +320,7 @@ public class ControlAuto : MonoBehaviour
 6. Configurar datos a gusto en el prefab del personaje.
 7. Instanciar el prefab y modificarle el local scale a (1, 0.5, 1) para que se vea más largo que alto.
 8. Ejecutar para mover.
-9. Etiquetar la instancia como Player y agregar trampas en la escena como hicimos en el Ejercicio 2. Ejecutar y probar.
+9. Etiquetar la instancia como `Player` y agregar trampas en la escena como hicimos en el Ejercicio 2. Ejecutar y probar.
 
 > ¿Qué pasa si giramos sin estar avanzando? 
 
@@ -322,7 +328,7 @@ public class ControlAuto : MonoBehaviour
 
 Vamos a agregarle un movimiento de física simple al movimiento de vehículos con aceleración y desaceleración.
 
-1. Agregar una variable de aceleración al MovimientoAuto y cambiar a modificar la velocidad en el tiempo en base a tener forward o no, de manera que si tengo apretado hacia adelante, la velocidad aumenta hasta tener una magnitud de forwardSpeed y si tengo apretado hacia atrás lo mismo pero hasta tener una magnitud de backwardSpeed.
+1. Agregar una variable de aceleración al `MovimientoAuto` y cambiar a modificar la velocidad en el tiempo en base a tener forward o no, de manera que si tengo apretado hacia adelante, la velocidad aumenta hasta tener una magnitud de forwardSpeed y si tengo apretado hacia atrás lo mismo pero hasta tener una magnitud de backwardSpeed.
 
 ```csharp
 public class MovimientoAuto : MonoBehaviour

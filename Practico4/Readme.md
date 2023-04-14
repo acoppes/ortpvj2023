@@ -52,7 +52,7 @@ public class Movimiento : MonoBehaviour
 ```
 
 5. Ejecutar.
-6. Agregar a la cámara un script con un field público de tipo Transform que se llame target y referenciar en editor al transform del personaje. Agregar una lógica que copie la posición del transform referenciado en el transform de la cámara.
+6. Agregar a la cámara un script con un field público de tipo `Transform` que se llame `target` y referenciar en editor al transform del personaje. Agregar una lógica que copie la posición del transform referenciado en el transform de la cámara.
 
 ```csharp
 public class Follower : MonoBehaviour
@@ -76,18 +76,18 @@ public class Follower : MonoBehaviour
 
 * ¿Que pasa que ahora no se mueve el personaje? 
 
-8. Vamos a agregar decoraciones. Agregar un nuevo prefab llamado Arbol con un SpriteRenderer, crear un Sprite de tipo Diamante con el menu de Create, y asignarselo al SpriteRenderer. Rotar el transform 90 grados en el eje z para que quede apuntando para arriba. Colorear de verde e instanciar en la escena muchos árboles a gusto. 
+8. Vamos a agregar decoraciones. Agregar un nuevo prefab llamado `Arbol` con un `SpriteRenderer`, crear un Sprite de tipo Diamante con el menu de Create, y asignarselo al `SpriteRenderer`. Rotar el transform 90 grados en el eje z para que quede apuntando para arriba. Colorear de verde e instanciar en la escena muchos árboles a gusto. 
 9. Ejecutar
 
 ### Ejercicio 2
 
 > En el bosque hay monedas tiradas y el personaje deberá agarrarlas y el jugador podrá ver en pantalla cuantas monedas tiene.
 
-1. Crear una nueva estructura para Ejercicio 2, vamos a reusar Control, Movimiento y Follower del Ejercicio 1 y el prefab de árbol.  Vamos a crear un nuevo prefab de personaje igual al del Ejercicio 1.
-2. Vamos a crear un nuevo prefab llamado Moneda que tiene un SpriteRenderer con un Sprite de tipo circulo, creado con el menu Create, asignarle el sprite y colorearlo de amarillo. Instanciar monedas en escena a gusto.
-3. Crear un nuevo Canvas con el menu GameObject/UI/Canvas y configurar ScaleWithScreenSize al CanvasScaler, con resolucion 1280x720. 
-4. Agregarle un objeto de tipo Text usando el menu GameObject/UI/Text y ubicarlo centrado arriba. Este objeto mostrará luego las monedas que tiene el personaje.
-5. Crear un nuevo script llamado CircleBounds y agregarlo en ambos prefabs (moneda y personaje), el cual tiene la lógica de detección de colisión de tipo Circlulo/Circulo. Configurar la moneda con radio de 0.25 y el personaje 0.5
+1. Crear una nueva estructura para Ejercicio 2, vamos a reusar `Control`, `Movimiento` y `Follower` del Ejercicio 1 y el prefab de árbol.  Vamos a crear un nuevo prefab de personaje igual al del Ejercicio 1.
+2. Vamos a crear un nuevo prefab llamado `Moneda` que tiene un `SpriteRenderer` con un Sprite de tipo circulo, creado con el menu `Create/2d/Sprites`, asignarle el sprite y colorearlo de amarillo. Instanciar monedas en escena a gusto.
+3. Crear un nuevo `Canvas` con el menu `GameObject/UI/Canvas` y configurar ScaleWithScreenSize al CanvasScaler, con resolucion 1280x720. 
+4. Agregarle un objeto de tipo `Text` usando el menu `GameObject/UI/Text` y ubicarlo centrado arriba. Este objeto mostrará luego las monedas que tiene el personaje.
+5. Crear un nuevo script llamado `CircleBounds` y agregarlo en ambos prefabs (moneda y personaje), el cual tiene la lógica de detección de colisión de tipo Circlulo/Circulo. Configurar la moneda con radio de 0.25 y el personaje 0.5
 
 ```csharp
 public class CircleBounds : MonoBehaviour
@@ -120,7 +120,7 @@ public class CircleBounds : MonoBehaviour
 }
 ```
 
-6. Crear un script Personaje y agregarle al prefab de Personaje, que tenga una referencia pública a un Text de UI, configurarlo en el inspector como referencia al Text que creamos previamente, y agregarle un campo privado de tipo int llamado monedas, y agregarle un callback llamado OnContactWithMoneda que recibe un parámetro de tipo Moneda.
+6. Crear un script `Personaje` y agregarle al prefab de `Personaje`, que tenga una referencia pública a un `Text` de UI, configurarlo en el inspector como referencia al Text que creamos previamente, y agregarle un campo privado de tipo int llamado `monedas`, y agregarle un callback llamado `OnContactWithMoneda` que recibe un parámetro de tipo `Moneda`.
 
 ```csharp
 public class Personaje : MonoBehaviour
@@ -145,7 +145,7 @@ public class Personaje : MonoBehaviour
 }
 ```
 
-7. Crear un script Moneda y agregarlo al prefab de Moneda, asignarle un campo de tipo CircleBounds y configurar la referencia en el prefab de Moneda. Agregar una lógica en el FixedUpdate para detectar colision con el player y en ese caso enviar un broadcast message al GameObject del personaje con el nombre del callback que dijimos anteriormente.
+7. Crear un script `Moneda` y agregarlo al prefab de `Moneda`, asignarle un campo de tipo `CircleBounds` y configurar la referencia en el prefab de `Moneda`. Agregar una lógica en el `FixedUpdate` para detectar colision con el player y en ese caso enviar un broadcast message al `GameObject` del personaje con el nombre del callback que dijimos anteriormente.
 
 ```csharp
 public class Moneda : MonoBehaviour
@@ -173,7 +173,7 @@ public class Moneda : MonoBehaviour
 > Vamos a agregar persistencia para que el jugador pueda continuar su partida donde la dejó y agarrar cada vez más monedas.
 
 1. Crear nueva estructura y escena para Ejercicio3 a partir de la escena de Ejercicio2.
-2. Crear un nuevo script Persistidor y agregarlo a la instancia de personaje en la escena. Este script va a responder al mismo callback de agarrar una moneda y utilizar los PlayerPrefs para salvar las monedas de personaje. Aparte, en el Awake o Start va a leer de PlayerPrefs y asignarle la monedas guardadas a personaje.
+2. Crear un nuevo script `Persistidor` y agregarlo a la instancia de personaje en la escena. Este script va a responder al mismo callback de agarrar una moneda y utilizar los `PlayerPrefs` para salvar las monedas de personaje. Aparte, en el `Awake` va a leer de `PlayerPrefs` y asignarle la monedas guardadas a personaje.
 
 ```csharp
 public class Persistidor : MonoBehaviour
@@ -202,7 +202,7 @@ public class Persistidor : MonoBehaviour
 > Cada partida consiste en que el jugador agarre todas las monedas de la escena, una vez logrado ese objetivo, el juego presenta una pantalla con el resultado de cantidad de monedas recolectadas y la opción de jugar un nuevo nivel.
 
 1. Crear una nueva escena llamada Resultados
-2. Crear un script llamado Juego que cuente la cantidad de monedas en escena, en caso de no haber ninguna más, carga la escena llamada Resultados. Para esto podemos usar FindObjectsOfType<Moneda>(). Crear un GameObject en la escena Ejercicio3 y agregarle el script.
+2. Crear un script llamado Juego que cuente la cantidad de monedas en escena, en caso de no haber ninguna más, carga la escena llamada Resultados. Para esto podemos usar `FindObjectsOfType<Moneda>()`. Crear un GameObject en la escena Ejercicio3 y agregarle el script.
 
 ```csharp
 public class Juego : MonoBehaviour
@@ -229,7 +229,7 @@ public class Juego : MonoBehaviour
 ```
 
 3. En la escena Resultados, crear un GameObject llamado Resultados y agregarle un script llamado Resultados.
-4. Crear una UI que muestre la cantidad de monedas recolectadas en la partida y la cantidad de monedas totales. Además, tiene un botón de Next y un boton de Exit. Con el botón de Next el juego vuelve a cargar la escena Ejercicio3 para jugar de nuevo. En caso de tocar el botón Exit el juego sale.
+4. Crear una UI que muestre la cantidad de monedas recolectadas en la partida y la cantidad de monedas totales. Además, tiene un botón de `Next` y un boton de `Exit`. Con el botón de `Next` el juego vuelve a cargar la escena Ejercicio3 para jugar de nuevo. En caso de tocar el botón `Exit` el juego sale.
 
 ```csharp
 public class Resultados : MonoBehaviour
