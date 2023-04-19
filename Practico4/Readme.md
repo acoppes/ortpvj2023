@@ -5,7 +5,7 @@
 Poner en práctica los conocimientos de:
 
 * Cámara
-* User Interface 
+* Interfaz de usuario (Unity Canvas)
 * Persistencia básica y pasaje de datos entre escenas
 
 --- 
