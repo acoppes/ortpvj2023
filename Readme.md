@@ -58,8 +58,8 @@ Se presentan una lista de actividades que se utilizarán en mayor o menor medida
 
 La idea de los prácticos es que al comienzo sean más cercanos a tutoriales, para ir introduciendo y acostumbrando al editor y los temas, y a medida que avanza el curso los prácticos se tornan más clásicos, más del estilo problema a resolver. 
 
-* [Práctico 3](Practico3/Readme.md)
-* [Práctico 4](Practico4/Readme.md)
+* [Práctico 3](Practico3/Readme.md) - Controles, detección de colisiones y física.
+* [Práctico 4](Practico4/Readme.md) - Cámara, interfaces de usuario y persistencia.
 
 ## Referencias
 
