@@ -48,7 +48,8 @@ Se presentan una lista vaga de temas, sin orden de prioridad, que se pretenden v
 
 Se presentan una lista de actividades que se utilizarán en mayor o menor medida durante el curso para el aprendizaje de los conocimientos.
 
-* Clases interactivas
+* Clases en vivo
+* Grabaciones de las clases
 * Prácticos
 * Obligatorios
 
@@ -60,13 +61,19 @@ La idea de los prácticos es que al comienzo sean más cercanos a tutoriales, pa
 
 * [Práctico 3](Practico3/Readme.md) - Controles, detección de colisiones y física.
 * [Práctico 4](Practico4/Readme.md) - Cámara, interfaces de usuario y persistencia.
+* [Práctico 5](Practico5/Readme.md) - Creación de builds + código condicional.
 
 ## Referencias
 
 * Cámara
   - [World, View and Projection Transformation Matrices](http://www.codinglabs.net/article_world_view_projection_matrix.aspx)
 * Persistencia
-  - [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html)
+  - [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) - API de PlayerPrefs
+  - [Conditional Compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) - Flags de compilación para código definidas por Unity.
+
+* Unity
+  - [Log files](https://docs.unity3d.com/Manual/LogFiles.html) - Donde guarda Unity los archivos de logs de editor, etc. 
+  - [Application.platform](https://docs.unity3d.com/ScriptReference/Application-platform.html) - Referencia de la API de Application de Unity.
 
 ## Links de utilidad
 
