@@ -13,7 +13,7 @@ Poner en práctica los conocimientos de:
 
 ## Ejercicios
 
-Crear un proyecto nuevo de Unity llamado `PracticoAnimaciones`.
+Crear un proyecto nuevo de Unity llamado `PracticoAnimaciones`. Como siempre, la recomendación es ir trabajando los ejercicios en escenas y estructuras de directorios separados por comodidad y prolijidad pero cada uno es libre de hacerlo como quiera..
 
 ### Ejercicio 1
 
