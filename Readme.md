@@ -63,6 +63,8 @@ La idea de los prácticos es que al comienzo sean más cercanos a tutoriales, pa
 * [Práctico 3](Practico3/Readme.md) - Controles, detección de colisiones y física.
 * [Práctico 4](Practico4/Readme.md) - Cámara, interfaces de usuario y persistencia.
 * [Builds & Código condicional](PracticoBuildsYCodigoCondicional/Readme.md) - Creación de ejecutables y código condicional.
+* [Física de Unity](PracticoFisicaUnity/Readme.md) - Detección de colisiones y física usando API de Unity.
+* [Animaciones y Tweens](PracticoAnimaciones/Readme.md) - Animaciones y tweens.
 
 ## Referencias
 
