@@ -28,6 +28,10 @@ Tenemos un cañon que dispara pelotas en un ángulo fijo cuando se presiona el b
 
 Nuestro vehículo avanzado de recolección de basura metálica utiliza una tecnología de atracción magnética para identificar y recolectar elementos metálicos. 
 
+Para construir el vehículo se puede usar dos objetos, el primero se mueve en la posicion del mouse, tiene un rigid body pero kinematico, el segundo, el magneto, no, se pueden unir por un joint. 
+
+Para lograr el magneto se puede usar un physics overlap dado un radio o usando un CircleCollider2d, y a todos los elementos de un layer especifico aplicarles una fuerza de atracción en la dirección del magneto.
+
 ![Ejemplo de ejercicio1](images/ejercicio2.gif)
 
 ---
@@ -49,3 +53,11 @@ Ahora el cañon dispara distintas formas y tamaños, no solo pelotas, puede disp
 ### Ejercicio 1.4
 
 Cada vez que el contenedor recibe un nuevo elemento se colorea temporalmente y vuelve a su color original. Cuando hay más de 4 elementos en un contenedor el contenedor se colorea de verde indicando que ese contenedor ya está lleno. Al llenar todos los contenedores el juego se termina mostrando un mensaje en pantalla de "VICTORY".
+
+### Ejercicio 2.1
+
+Mejorar el ejercicio 2 haciendo que los objetos que tocan el magneto pasan a estar unidos al magneto con un joint (dinámico) y se les deja de aplicar fuerza. Agregar un control que al mantener apretado el boton del mouse se deja de aplicar fuerzas y se liberan todos los joints de esos objetos, de manera de poder soltar a voluntad los elementos arriba del contenedor. 
+
+### Ejercicio 2.2 
+
+Crear elementos de distintas formas y tamaños, tanto elementos magnéticos como otros objetos no magnéticos. Al recolectar todos los elementos magnéticos en los contenedores, el juego termina mostrando en la pantalla un cartel que dice "VICTORY".
