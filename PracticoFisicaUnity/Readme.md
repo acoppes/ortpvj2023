@@ -28,7 +28,7 @@ Tenemos un cañon que dispara pelotas en un ángulo fijo cuando se presiona el b
 
 Nuestro vehículo avanzado de recolección de basura metálica utiliza una tecnología de atracción magnética para identificar y recolectar elementos metálicos. 
 
-<video src="images/ejercicio2.mp4"></video>
+<video src="images/ejercicio2.mp4" controls="controls" style="max-width: 600px;"></video>
 
 ---
 
