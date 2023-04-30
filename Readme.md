@@ -43,6 +43,7 @@ Se presentan una lista vaga de temas, sin orden de prioridad, que se pretenden v
 * Optimizaciones
 * Extensiones de editor
 * Scripting (visual, lua, etc)
+* SFX y BG Music
 
 ## Actividades
 
@@ -61,7 +62,7 @@ La idea de los prácticos es que al comienzo sean más cercanos a tutoriales, pa
 
 * [Práctico 3](Practico3/Readme.md) - Controles, detección de colisiones y física.
 * [Práctico 4](Practico4/Readme.md) - Cámara, interfaces de usuario y persistencia.
-* [Práctico 5](Practico5/Readme.md) - Creación de builds + código condicional.
+* [Builds & Código condicional](Practico5/Readme.md)
 
 ## Referencias
 
@@ -78,3 +79,4 @@ La idea de los prácticos es que al comienzo sean más cercanos a tutoriales, pa
 ## Links de utilidad
 
 * [Leaderboard-creator](https://danqzq.itch.io/leaderboard-creator) - sistema de leaderboards remoto. 
+* [Unity Gaming Services](https://dashboard.unity3d.com/gaming/) - Servicios de Unity para leaderborads, cloud save, analytics, etc.
