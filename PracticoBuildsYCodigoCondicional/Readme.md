@@ -1,4 +1,4 @@
-# Práctico 5
+# Práctico: Builds & Código condicional
 
 ## Objetivos
 
@@ -13,7 +13,7 @@ Poner en práctica los conocimientos de:
 
 ## Ejercicios
 
-Comenzar los ejercicios en un nuevo proyecto llamado `Practico5`. Los ejercicios Bonus son opcionales para que cada uno haga luego de la clase.
+Comenzar los ejercicios en un nuevo proyecto llamado `PracticoBuildYCodigoCondicional`. 
 
 ### Ejercicio 1
 

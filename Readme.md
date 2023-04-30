@@ -62,7 +62,7 @@ La idea de los prácticos es que al comienzo sean más cercanos a tutoriales, pa
 
 * [Práctico 3](Practico3/Readme.md) - Controles, detección de colisiones y física.
 * [Práctico 4](Practico4/Readme.md) - Cámara, interfaces de usuario y persistencia.
-* [Builds & Código condicional](Practico5/Readme.md)
+* [Builds & Código condicional](PracticoBuildsYCodigoCondicional/Readme.md) - Creación de ejecutables y código condicional.
 
 ## Referencias
 
