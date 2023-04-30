@@ -22,7 +22,7 @@ Crear un proyecto nuevo de Unity llamado `PracticoFisicaUnity`. Como siempre, la
 
 Tenemos un cañon que dispara pelotas en un ángulo fijo cuando se presiona el boton izquierdo del mouse, y estas caen por la gravedad del motor de fisica en un contenedor. Es el comienzo de un juego de embocar pelotas.
 
-![Ejemplo de ejercicio1](images/ejercicio1.png)
+![Ejemplo de ejercicio1](images/ejercicio1.gif)
 
 ### Ejercicio 2
 
