@@ -24,6 +24,12 @@ Tenemos un cañon que dispara pelotas en un ángulo fijo cuando se presiona el b
 
 ![Ejemplo de ejercicio1](images/ejercicio1.png)
 
+### Ejercicio 2
+
+Nuestro vehículo avanzado de recolección de basura metálica utiliza una tecnología de atracción magnética para identificar y recolectar elementos metálicos. 
+
+<video src="images/ejercicio2.mp4"></video>
+
 ---
 
 ## Bonus tracks
