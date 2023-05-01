@@ -19,10 +19,16 @@ Crear un proyecto nuevo de Unity llamado `PracticoAnimaciones`. Como siempre, la
 
 Leonardo de las tortugas ninja vino a ayudarnos para este práctico, el primer ejercicio tenemos que hacerlo caminar de un lado para otro, asi que vamos a crear un controlador que cuando presionamos los controles izquierda y derecha Leonardo camina en esas direcciones y al soltar los controles se queda quieto. También es importante que apunte en la dirección que camina.
 
+![Ejemplo de ejercicio1](images/ejercicio1.gif)
+
 ---
 
 ## Bonus tracks
 
 ### Ejercicio 1.1
 
-Ahora Leonardo realiza un ataque al apretar la barra espaciadora, durante ese ataque no puede caminar en caso de tocar las teclas derecha o izquierda.
+Ahora Leonardo realiza un ataque con la animación Attack al apretar la barra espaciadora, durante ese ataque no puede caminar en caso de tocar las teclas derecha o izquierda.
+
+### Ejercicio 1.2
+
+Ahora ene caso de hacer doble tap con la izquierda o derecha, Leonardo comienza a correr con la animación Sprint y se desplaza el doble de rápido, al soltar los controles ejecuta la animación SprintStop.

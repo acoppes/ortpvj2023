@@ -294,6 +294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 10
+  animator: {fileID: 1185723664}
+  spriteRenderer: {fileID: 1843141425}
 --- !u!1 &1843141423
 GameObject:
   m_ObjectHideFlags: 0
