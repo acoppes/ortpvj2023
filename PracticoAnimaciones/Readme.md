@@ -21,6 +21,12 @@ Leonardo de las tortugas ninja vino a ayudarnos para este práctico, el primer e
 
 ![Ejemplo de ejercicio1](images/ejercicio1.gif)
 
+### Ejercicio 2
+
+Vamos a hacer algo similar pero ahora nuestro personaje está compuesto con sprites y la animación construida en Mechanim (el sistema de animaciones de Unity) animando la escala del objeto a diferentes velocidades para el Idle y para el Walk.
+
+![Ejemplo de ejercicio1](images/ejercicio2.gif)
+
 ---
 
 ## Bonus tracks
