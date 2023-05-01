@@ -42,3 +42,5 @@ Ahora ene caso de hacer doble tap con la izquierda o derecha, Leonardo comienza 
 ### Ejercicio 2.1
 
 Al apretar la barra espaciadora nuestro personaje entra en un modo de carga con la animación Charge, si carga más de 1 segundo, al soltar la barra espaciadora el personaje hace una animacion de disparo Attack a mitad de la animación dispara un proyectil en la dirección que está mirando. Si suelta la barra espaciadora antes de la carga, vuelve a animacion Idle. 
+
+![Ejemplo de ejercicio1](images/ejercicio2_1.gif)
