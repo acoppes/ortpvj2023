@@ -38,3 +38,7 @@ Ahora Leonardo realiza un ataque con la animación Attack al apretar la barra es
 ### Ejercicio 1.2
 
 Ahora ene caso de hacer doble tap con la izquierda o derecha, Leonardo comienza a correr con la animación Sprint y se desplaza el doble de rápido, al soltar los controles ejecuta la animación SprintStop.
+
+### Ejercicio 2.1
+
+Al apretar la barra espaciadora nuestro personaje entra en un modo de carga con la animación Charge, si carga más de 1 segundo, al soltar la barra espaciadora el personaje hace una animacion de disparo Attack a mitad de la animación dispara un proyectil en la dirección que está mirando. Si suelta la barra espaciadora antes de la carga, vuelve a animacion Idle. 
