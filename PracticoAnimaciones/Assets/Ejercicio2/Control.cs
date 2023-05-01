@@ -13,6 +13,11 @@ namespace Ejercicio2
 
         public float multiplicadorVelocidadDuranteCarga = 0.5f;
 
+        private bool wasCharging;
+
+        public Transform attachPointAtaque;
+        public GameObject bulletPrefab;
+
         // Update is called once per frame
         void Update()
         {
@@ -30,17 +35,42 @@ namespace Ejercicio2
             animator.SetBool("walking", walking);
             animator.SetBool("charging", charging);
 
-            if (!charging)
+            if (!charging && wasCharging)
             {
+                if (chargeCurrentTime > chargeTime)
+                {
+                    // start fire animation
+                    animator.SetTrigger("attack");
+                }
+                else
+                {
+                    Debug.Log("Ataque cancelado!");
+                }
+                
                 chargeCurrentTime = 0;
             }
-            
+
             if (walking)
             {
                 transform.localEulerAngles = new Vector3(0, horizontal > 0 ? 0 : 180, 0);
             }
 
-            chargeCurrentTime += Time.deltaTime;
+            if (charging)
+            {
+                chargeCurrentTime += Time.deltaTime;
+            }
+
+            wasCharging = charging;
+        }
+
+        public void OnAttackEvent()
+        {
+            // spawn prefab
+            var bulletInstance = GameObject.Instantiate(bulletPrefab);
+            bulletInstance.transform.position = attachPointAtaque.transform.position;
+
+            var bullet = bulletInstance.GetComponent<Bullet>();
+            bullet.direccion = attachPointAtaque.transform.right;
         }
     }
 }
