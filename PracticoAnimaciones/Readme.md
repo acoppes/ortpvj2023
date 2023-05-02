@@ -4,6 +4,7 @@
 
 Poner en práctica los conocimientos de:
 
+* Texturas, Sprites y Spritesheets
 * Animaciones
   - Secuencia de imágenes
   - Mechanim
@@ -48,3 +49,8 @@ Ahora ene caso de hacer doble tap con la izquierda o derecha, Leonardo comienza 
 Al apretar la barra espaciadora nuestro personaje entra en un modo de carga con la animación Charge, si carga más de 1 segundo, al soltar la barra espaciadora el personaje hace una animacion de disparo Attack a mitad de la animación dispara un proyectil en la dirección que está mirando. Si suelta la barra espaciadora antes de la carga, vuelve a animacion Idle. 
 
 ![Ejemplo de ejercicio1](images/ejercicio2_1.gif)
+
+## Referencias
+
+* [Learn OpenGL Textures](https://learnopengl.com/Getting-started/Textures) - Artículo que explica más en detalle como funcionan las texturas en OpenGL pero que sirve a modo de ejemplo para entender algunos conceptos comunes entre distintas APIs gráficas.
+* [Draw call batching](https://docs.unity3d.com/Manual/DrawCallBatching.html) - Documentación de Unity para entender como lograr batching.

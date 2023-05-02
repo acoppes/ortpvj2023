@@ -37,13 +37,14 @@ Se presentan una lista vaga de temas, sin orden de prioridad, que se pretenden v
 * Cámara
 * Interfaces de Usuario
 * Persistencia de datos
+* SFX y BG Music
+* Shaders
 * Gameplay
 * IA
 * Build y publicación
 * Optimizaciones
 * Extensiones de editor
 * Scripting (visual, lua, etc)
-* SFX y BG Music
 
 ## Actividades
 
