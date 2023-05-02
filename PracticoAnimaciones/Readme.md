@@ -5,9 +5,13 @@
 Poner en práctica los conocimientos de:
 
 * Animaciones
-  - General, Mechanim, eventos.
+  - Secuencia de imágenes
+  - Mechanim
+  - Blending de animaciones
 * Tweens
-  - Corutinas, LeanTween, DotTween.
+  - Corutinas
+  - LeanTween
+* Sistema de partículas
 
 --- 
 
@@ -23,7 +27,7 @@ Leonardo de las tortugas ninja vino a ayudarnos para este práctico, el primer e
 
 ### Ejercicio 2
 
-Vamos a hacer algo similar pero ahora nuestro personaje está compuesto con sprites y la animación construida en Mechanim (el sistema de animaciones de Unity) animando la escala del objeto a diferentes velocidades para el Idle y para el Walk.
+Vamos a hacer algo similar pero ahora nuestro personaje está compuesto con sprites y la animación construida en Mechanim animando la escala del objeto a diferentes velocidades para el Idle y para el Walk.
 
 ![Ejemplo de ejercicio1](images/ejercicio2.gif)
 
