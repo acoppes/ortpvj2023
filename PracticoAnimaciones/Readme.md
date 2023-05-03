@@ -1,4 +1,4 @@
-# Práctico Animaciones & Tweens (WORK IN PROGRESS)
+# Práctico Animaciones & Tweens
 
 ## Objetivos
 
