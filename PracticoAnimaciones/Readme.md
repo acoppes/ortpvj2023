@@ -54,3 +54,6 @@ Al apretar la barra espaciadora nuestro personaje entra en un modo de carga con 
 
 * [Learn OpenGL Textures](https://learnopengl.com/Getting-started/Textures) - Artículo que explica más en detalle como funcionan las texturas en OpenGL pero que sirve a modo de ejemplo para entender algunos conceptos comunes entre distintas APIs gráficas.
 * [Draw call batching](https://docs.unity3d.com/Manual/DrawCallBatching.html) - Documentación de Unity para entender como lograr batching.
+* [Choosing the resolution of your 2D art assets](https://blog.unity.com/engine-platform/choosing-the-resolution-of-your-2d-art-assets) - Articulo que ayuda en la eleccion de tamaño de assets segun resolución objetivo y explica también pixel per units.
+* [Cult of the Lamb - Spine showcase](https://www.youtube.com/watch?v=M4J6LAmsV7A) - Ejemplo animación por huesos en 2d usando Spine.
+* [Art Design Deep Dive: Using a 3D pipeline for 2D animation in Dead Cells](https://www.gamedeveloper.com/production/art-design-deep-dive-using-a-3d-pipeline-for-2d-animation-in-i-dead-cells-i-) - Uso de pipeline 3d para generar animaciones 2d.
