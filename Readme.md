@@ -25,6 +25,8 @@ Partiendo de la base que esta materia es una electiva de la carrera, se busca ge
 
 Los estudiantes deberán realizar **dos** entregables obligatorios, que componen el videojuego, durante el curso, de manera individual o en equipos, que tienen un mínimo de nota cada uno para salvar.
 
+Se planifica el curso para una dedicación semanal de al rededor de 7hs por parte de los estudiantes, que incluyen por un lado participar de las clases de 3hs de duración y por otro la realización de los obligatorios (y opcionalmente los prácticos) en las 4 horas restantes.  
+
 ## Programa
 
 Se presentan una lista vaga de temas, sin orden de prioridad, que se pretenden ver durante el curso. Los temas van a estar presentados principalmente para su uso en Unity pero con la intención de brindar una perspectiva más abstracta, cuando se pueda, aplicable a otros motores.
