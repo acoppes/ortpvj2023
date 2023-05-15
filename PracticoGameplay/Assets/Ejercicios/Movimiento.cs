@@ -12,12 +12,25 @@ namespace Ejercicios
         [NonSerialized]
         public Vector2 desiredDirection;
 
+        [NonSerialized]
+        public bool walking;
+
+        [NonSerialized]
+        public Vector2 velocity;
+
         private void FixedUpdate()
         {
             var direction = desiredDirection.normalized;
-            var velocity = direction * speed * Time.deltaTime;
+            
+            velocity = direction * speed * Time.deltaTime;
             velocity.y *= perspectiva;
-            transform.position += (Vector3) velocity;
+
+            walking = velocity.SqrMagnitude() > Mathf.Epsilon;
+            
+            if (walking)
+            {
+                transform.position += (Vector3)velocity;
+            }
         }
     }
 }
