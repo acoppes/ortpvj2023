@@ -1,7 +1,10 @@
 # ORT - Programación de Videojuegos - 2023
 
+* Universidad ORT Uruguay
+* Facultad de Ingeniería
+* Programación de Videojuegos (electiva)
 * Docente: Ing. Ariel Coppes
-* Año: 2023, primer semestre
+* Primer semestre de 2023 - 7/3 a 13/7
 
 Este repositorio contiene material para el curso de Programación de Videojuegos de la Universidad ORT del año 2023. 
 
@@ -26,6 +29,8 @@ Partiendo de la base que esta materia es una electiva de la carrera, se busca ge
 Los estudiantes deberán realizar **dos** entregables obligatorios, que componen el videojuego, durante el curso, de manera individual o en equipos, que tienen un mínimo de nota cada uno para salvar.
 
 Se planifica el curso para una dedicación semanal de al rededor de 7hs por parte de los estudiantes, que incluyen por un lado participar de las clases de 3hs de duración y por otro la realización de los obligatorios (y opcionalmente los prácticos) en las 4 horas restantes.  
+
+El primer obligatorio de máximo 30 puntos tienen al rededor de 4 semanas para hacerlo una vez presentado, mientras que el segundo obligatorio, de máximo 70 puntos, tienen al rededor de 8 semanas para realizarlo.
 
 ## Programa
 
