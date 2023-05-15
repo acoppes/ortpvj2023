@@ -1,4 +1,4 @@
-# Práctico Física Unity (WORK IN PROGRESS)
+# Práctico Física Unity
 
 ## Objetivos
 

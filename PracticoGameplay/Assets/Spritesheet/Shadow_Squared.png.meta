@@ -1,21 +1,12 @@
 fileFormatVersion: 2
-guid: a11b786caff06ad4f96e33cedd5dc674
+guid: 326de12db423d4d469335a6c45aa7ad7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5920564903354235139
-    second: foliagePack_default_0
-  - first:
-      213: -7543719441136571758
-    second: foliagePack_default_1
-  - first:
-      213: 5527352532845905108
-    second: foliagePack_default_2
-  - first:
-      213: -2791784293502985091
-    second: foliagePack_default_3
+      213: 7482667652216324306
+    second: Square
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -45,8 +36,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -58,12 +49,12 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 4, y: 4, z: 4, w: 4}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -74,7 +65,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -101,7 +91,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -116,91 +118,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: foliagePack_default_0
+      name: Square
       rect:
         serializedVersion: 2
         x: 0
-        y: 805
-        width: 151
-        height: 211
-      alignment: 9
-      pivot: {x: 0.49999994, y: 0.0024717792}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df60de1c69de5dda0800000000000000
-      internalID: -5920564903354235139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: foliagePack_default_1
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 221
-        width: 101
-        height: 206
-      alignment: 9
-      pivot: {x: 0.49415332, y: 0.009809327}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29aa8d9f2235f4790800000000000000
-      internalID: -7543719441136571758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: foliagePack_default_2
-      rect:
-        serializedVersion: 2
-        x: 762
-        y: 645
-        width: 40
-        height: 49
-      alignment: 9
-      pivot: {x: 0.5, y: 0.027581787}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d4c2ace7d915bc40800000000000000
-      internalID: 5527352532845905108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: foliagePack_default_3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 3
-        width: 96
-        height: 54
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c5d300af69149d0800000000000000
-      internalID: -2791784293502985091
+      spriteID: 2d009a6b596c7d760800000000000000
+      internalID: 7482667652216324306
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: -128, y: 128}
+      - {x: -128, y: -128}
+      - {x: 128, y: -128}
+      - {x: 128, y: 128}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
