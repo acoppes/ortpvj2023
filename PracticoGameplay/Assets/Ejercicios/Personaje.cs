@@ -5,8 +5,6 @@ namespace Ejercicios
     public class Personaje : MonoBehaviour
     {
         public Animator animator;
-
-        public SpriteRenderer spriteRenderer;
         public Movimiento movimiento;
         
         private void Update()
@@ -15,7 +13,7 @@ namespace Ejercicios
             
             if (Mathf.Abs(movimiento.velocity.x) > 0)
             {
-                spriteRenderer.flipX = movimiento.velocity.x < 0;
+                transform.localEulerAngles = new Vector3(0, movimiento.velocity.x < 0 ? 180 : 0, 0);
             }
         }
     }

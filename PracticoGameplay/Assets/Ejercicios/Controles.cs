@@ -1,11 +1,12 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Ejercicios
 {
     public class Controles : MonoBehaviour
     {
         public Movimiento movimiento;
+
+        public Weapon weapon;
         
         public void Update()
         {
@@ -13,6 +14,8 @@ namespace Ejercicios
             var y = Input.GetAxis("Vertical");
 
             movimiento.desiredDirection = new Vector2(x, y);
+
+            weapon.isTriggerPressed = Input.GetButton("Fire1");
         }
     }
 }

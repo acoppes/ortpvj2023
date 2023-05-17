@@ -17,6 +17,10 @@ namespace Ejercicios
 
         [NonSerialized]
         public Vector2 velocity;
+        
+        public float minDistanceToTarget = 0.1f;
+
+        public float minDistanceToTargetSqr => minDistanceToTarget * minDistanceToTarget;
 
         private void FixedUpdate()
         {
