@@ -60,6 +60,9 @@ Para lograr maximizar experiencia de juego se espera que se apliquen uno o más 
 * Efectos de disparo, de impacto
 * Sistemas de particulas para el propulsor de la nave, o para los misiles en caso de tener.
 * Que las UI se sientan bien, respetar un tamaño común para las fonts, espaciado dentro de los botones, etc.
+* Que haya elementos de decoración que se rompan cuando una bullet los toca o bien cuando algo explota cerca, etc (por ejemplo unas cajas).
+* El movimiento de la cámara fluido y quizás permitir scrollear un poco para ambos lados.
+* Parallax de elementos en el fondo.
 
 Se espera que los estudiantes agreguen su impronta a la hora de crear comportamientos para los enemigos, distintas armas, efectos, etc, lo cual va a llevar a que cada equipo implemente el juego a su manera.
 
