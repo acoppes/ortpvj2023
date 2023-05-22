@@ -54,6 +54,8 @@ Algunos assets ya se encuentran integrados en el proyecto base del obligatorio, 
 * Sonidos
 * Spawn de pickups para recuparar la vida, para cambiar de arma, para incrementar los puntos, etc.
 
+### Game Feeling
+
 Para lograr maximizar experiencia de juego se espera que se apliquen uno o más de los siguientes elementos:
 
 * Camera shake (al recibir daño por ejemplo, o al eliminar un enemigo)
@@ -63,6 +65,7 @@ Para lograr maximizar experiencia de juego se espera que se apliquen uno o más 
 * Que haya elementos de decoración que se rompan cuando una bullet los toca o bien cuando algo explota cerca, etc (por ejemplo unas cajas).
 * El movimiento de la cámara fluido y quizás permitir scrollear un poco para ambos lados.
 * Parallax de elementos en el fondo.
+* La nave rota sutilmente al moverse hacia los costados (puede ser con eje en la z o en 3d)
 
 Se espera que los estudiantes agreguen su impronta a la hora de crear comportamientos para los enemigos, distintas armas, efectos, etc, lo cual va a llevar a que cada equipo implemente el juego a su manera.
 
@@ -77,3 +80,19 @@ Opcionalmente se puede subir el juego a itch.io para simplificar su testeo y aum
 ## Formato de evaluación
 
 Utilizando el ejecutable o desde la página web, se va a probar la experiencia de juego, jugabilidad y diversión y luego se va a evaluar completitud de los requisitos planteados. No está demás aclarar que el juego tiene que estar funcionalmente correcto sin bugs que puedan afectar experiencia de juego.
+
+
+## Referencias
+
+- [Skies of Chaos](https://www.youtube.com/watch?v=dSyWXQv3HOY) - https://www.youtube.com/watch?v=dSyWXQv3HOY
+- [1924](https://www.youtube.com/watch?v=WRnn-bhv-AE) - https://www.youtube.com/watch?v=WRnn-bhv-AE
+- [Sky Force](https://www.youtube.com/watch?v=Ss6B9PLZYVo) - https://www.youtube.com/watch?v=Ss6B9PLZYVo
+- [Ikaruga](https://youtu.be/h__26tmbUHk?t=67) - https://youtu.be/h__26tmbUHk
+
+## Anexos
+
+Se ponen algunos mockups de UI como para tener de referencias de algo mínimo aceptable para el obligatorio:
+
+![Mockup del obligatorio](images/mockup-ui.png)
+
+Adjunto al proyecto de obligatorio hay una escena de mockups que contiene esta referencia armada en canvas de unity.  
