@@ -53,7 +53,7 @@ Si bien algunos assets ya se encuentran integrados en el proyecto base, esta es 
   - Disparo de 3 bullets, una hacia adelante y otras dos en diagonal.
   - Misil teledirigido hacia enemigos.
   - Todos los anteriores pueden ser armas de enemigos para generar variedad.
-* Pantalla de main menu, victory (en caso de pasar de niveles) y defeat, pantalla de créditos donde deberán poner la info de los estudiantes, materia, año, docente, y además agregar agradecimientos a los autores de los assets. 
+* Pantalla de main menu, victory (en caso de pasar de niveles) y defeat, pantalla de datos de obligatorio donde deberán poner la info de los estudiantes, materia, año, docente, y además agregar agradecimientos a los autores de los assets (principalmente Kenney). 
 * Sonidos
 * Spawn de pickups para recuparar la vida, para cambiar de arma, para incrementar los puntos, etc.
 
