@@ -2018,15 +2018,15 @@ MonoBehaviour:
   m_text: "Recupera la muestra perdida antes de que sea tarde. \n\nLas colonias alien\xEDgenas
     est\xE1n en peligro."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8c43e63aa1e0f0c4ca2668ca4eea0630, type: 2}
-  m_sharedMaterial: {fileID: -6648505839220284754, guid: 8c43e63aa1e0f0c4ca2668ca4eea0630, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9389937ceee24d74d8d5ee3911db043b, type: 2}
+  m_sharedMaterial: {fileID: -8190754948727344619, guid: 9389937ceee24d74d8d5ee3911db043b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4282335039
+  m_fontColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3254,7 +3254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717844950}
   m_LocalRotation: {x: 0, y: 0, z: -0.14608307, w: 0.98927236}
-  m_LocalPosition: {x: 2.72, y: 5.44, z: 0}
+  m_LocalPosition: {x: 2.77, y: 5.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

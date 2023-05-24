@@ -11,6 +11,7 @@ namespace Ejercicios
         public Transform bulletAttachPoint;
         
         public GameObject bulletPrefab;
+        public GameObject bulletFxPrefab;
 
         private void FixedUpdate()
         {
@@ -21,6 +22,8 @@ namespace Ejercicios
                 var bulletObject = GameObject.Instantiate(bulletPrefab, bulletAttachPoint.position, bulletAttachPoint.rotation);
                 bulletObject.GetComponent<Bullet>().Fire(transform.right);
                 reload.Reset();
+                
+                GameObject.Instantiate(bulletFxPrefab, bulletAttachPoint.position, bulletAttachPoint.rotation);
             }
         }
     }

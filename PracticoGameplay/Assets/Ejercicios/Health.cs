@@ -7,6 +7,8 @@ namespace Ejercicios
         public float current;
         public float total;
 
+        public Animator animator;
+        
         public void Damage(float damage)
         {
             current -= damage;
@@ -14,6 +16,12 @@ namespace Ejercicios
             if (current <= 0)
             {
                 GameObject.Destroy(gameObject);
+                return;
+            }
+            
+            if (animator != null)
+            {
+                animator.SetTrigger("hit");
             }
         }
     }

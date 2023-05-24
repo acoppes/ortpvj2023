@@ -447,6 +447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current: 2
   total: 2
+  animator: {fileID: 5455951836849985065}
 --- !u!50 &7164223749241111877
 Rigidbody2D:
   serializedVersion: 4

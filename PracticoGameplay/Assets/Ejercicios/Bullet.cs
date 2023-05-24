@@ -11,6 +11,8 @@ namespace Ejercicios
         
         public Cooldown timeToLive;
         
+        public GameObject hitFxPrefab;
+        
         public void Fire(Vector2 direction)
         {
             var body = GetComponent<Rigidbody2D>();
@@ -52,6 +54,8 @@ namespace Ejercicios
                 health.Damage(damage);
             }
 
+            GameObject.Instantiate(hitFxPrefab, transform.position, transform.rotation);
+            
             GameObject.Destroy(gameObject);
         }
     }
