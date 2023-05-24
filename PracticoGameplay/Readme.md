@@ -57,3 +57,11 @@ Los spawners comienzan a spawnear enemigos cada vez más frecuentemente y cada v
 
 El personaje puede disparar libre ahora e incluso caminar para un lado pero disparar para el otro, o sea que el arma rota al rededor en la direccion hacia donde está el mouse y las balas salen en esa dirección al disparar.
 
+### Track 2
+
+Agregar una cámara que siga al personaje libremente, con un pequeño delay. La cámara no debería irse de los limites del mundo y el personaje tampoco.
+
+### Track 3
+
+Al disparar la cámara tiene un pequeño shake y al impactar en enemigos tmb, de hecho al morir un enemigo la cámara tiene un shake más grande.
+

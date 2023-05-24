@@ -448,6 +448,7 @@ MonoBehaviour:
   current: 2
   total: 2
   animator: {fileID: 5455951836849985065}
+  deathFxPrefab: {fileID: 7730827721733011689, guid: 0c7fc752f80285245a673d45536e61fd, type: 3}
 --- !u!50 &7164223749241111877
 Rigidbody2D:
   serializedVersion: 4
