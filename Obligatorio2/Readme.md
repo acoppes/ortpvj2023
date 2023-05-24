@@ -95,7 +95,8 @@ Utilizando el ejecutable o desde la página web, se va a probar la experiencia d
 
 ### Herramientas
 
-- https://iznaut.itch.io/bfxr
+- [Bfxr](https://iznaut.itch.io/bfxr) - herramienta para generar sonidos.
+- [Jsfxr](https://sfxr.me/) - similar herramienta para generar sonidos pero online.
 
 ### Mockups 
 
