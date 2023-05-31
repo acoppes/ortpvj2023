@@ -16,6 +16,8 @@ namespace Ejercicios
         public CinemachineImpulseSource deathImpulseSource;
 
         public CinemachineImpulseSource hitImpulseSource;
+
+        public float factor => current / total;
         
         public void Damage(float damage)
         {
