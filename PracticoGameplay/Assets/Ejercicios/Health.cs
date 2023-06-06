@@ -1,6 +1,7 @@
-﻿using Cinemachine;
+﻿using System;
+using Cinemachine;
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.Events;
 
 namespace Ejercicios
 {
@@ -9,19 +10,25 @@ namespace Ejercicios
         public float current;
         public float total;
 
-        public Animator animator;
-        
         public GameObject deathFxPrefab;
 
         public CinemachineImpulseSource deathImpulseSource;
 
-        public CinemachineImpulseSource hitImpulseSource;
-
         public float factor => current / total;
-        
+
+        public UnityEvent<float> onDamageUnityEvent;
+
         public void Damage(float damage)
         {
             current -= damage;
+
+            if (damage > 0)
+            {
+                onDamageUnityEvent.Invoke(damage);
+                gameObject.BroadcastMessage("OnDamage", damage, SendMessageOptions.DontRequireReceiver);
+
+                EventosGenerales.OnPersonajeDamaged(this.gameObject, damage);
+            }
 
             if (current <= 0)
             {
@@ -34,16 +41,6 @@ namespace Ejercicios
                 
                 GameObject.Destroy(gameObject);
                 return;
-            }
-
-            if (hitImpulseSource != null)
-            {
-                hitImpulseSource.GenerateImpulse();
-            }
-            
-            if (animator != null)
-            {
-                animator.SetTrigger("hit");
             }
         }
     }

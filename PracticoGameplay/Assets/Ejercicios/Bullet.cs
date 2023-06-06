@@ -7,7 +7,7 @@ namespace Ejercicios
     {
         public float speed;
 
-        public float damage;
+        public int minDamage, maxDamage;
         
         public Cooldown timeToLive;
         
@@ -36,7 +36,7 @@ namespace Ejercicios
             var health = other.gameObject.GetComponentInParent<Health>();
             if (health != null)
             {
-                health.Damage(damage);
+                health.Damage(UnityEngine.Random.Range(minDamage, maxDamage));
             }
 
             GameObject.Destroy(gameObject);
@@ -51,7 +51,7 @@ namespace Ejercicios
             var health = other.gameObject.GetComponentInParent<Health>();
             if (health != null)
             {
-                health.Damage(damage);
+                health.Damage(UnityEngine.Random.Range(minDamage, maxDamage));
             }
 
             GameObject.Instantiate(hitFxPrefab, transform.position, transform.rotation);

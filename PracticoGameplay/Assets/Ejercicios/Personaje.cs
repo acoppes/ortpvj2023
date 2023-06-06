@@ -7,6 +7,7 @@ namespace Ejercicios
     {
         public Animator animator;
         public Movimiento movimiento;
+        public Health health;
         
         private void Update()
         {
@@ -15,6 +16,14 @@ namespace Ejercicios
             if (Mathf.Abs(movimiento.velocity.x) > 0)
             {
                 transform.localEulerAngles = new Vector3(0, movimiento.velocity.x < 0 ? 180 : 0, 0);
+            }
+        }
+
+        public void OnDamage(float damage)
+        {
+            if (animator != null)
+            {
+                animator.SetTrigger("hit");
             }
         }
     }

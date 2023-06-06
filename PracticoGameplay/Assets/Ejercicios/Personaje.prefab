@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 5775394947201466793}
   - component: {fileID: 5455951836849985065}
   - component: {fileID: 4074837527000383527}
+  - component: {fileID: 830327644333764208}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -249,6 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5455951836849985065}
   movimiento: {fileID: 5775394947201466792}
+  health: {fileID: 830327644333764208}
 --- !u!114 &5775394947201466792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +320,25 @@ MonoBehaviour:
   bulletAttachPoint: {fileID: 2105564456373961502}
   bulletPrefab: {fileID: 7118294973450708706, guid: c62c0e61eee0e5a4eabfa345042617f2, type: 3}
   bulletFxPrefab: {fileID: 7730827721733011689, guid: a364ed43d250aad4db5bba43d608dee2, type: 3}
+--- !u!114 &830327644333764208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5775394947201466796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b495408b17e04daaba87b11b17154f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: 5
+  total: 5
+  deathFxPrefab: {fileID: 0}
+  deathImpulseSource: {fileID: 0}
+  onDamageUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5775394947503959577
 GameObject:
   m_ObjectHideFlags: 0

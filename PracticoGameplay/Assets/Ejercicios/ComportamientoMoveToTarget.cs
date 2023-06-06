@@ -7,6 +7,11 @@ namespace Ejercicios
         public Vector3 targetPosition;
 
         public Movimiento movimiento;
+
+        public void OnDamage(float damage)
+        {
+            Debug.Log("Tomar control y escapar del player");
+        }
         
         public override bool Run()
         {

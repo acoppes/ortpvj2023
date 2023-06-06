@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Ejercicios
 {
@@ -9,6 +8,13 @@ namespace Ejercicios
 
         public CanvasGroup canvasGroup;
         public Transform bar;
+
+        public Animator animator;
+
+        public void OnDamage(float damage)
+        {
+            animator.SetTrigger("hit");
+        }
 
         private void Update()
         {

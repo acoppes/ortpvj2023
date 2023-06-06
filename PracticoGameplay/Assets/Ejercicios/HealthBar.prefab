@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5876516953750856325}
   - component: {fileID: 6376762203712543302}
   - component: {fileID: 2763029384436881869}
+  - component: {fileID: 6688909054938941202}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -84,7 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!225 &6376762203712543302
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -112,6 +113,28 @@ MonoBehaviour:
   health: {fileID: 0}
   canvasGroup: {fileID: 6376762203712543302}
   bar: {fileID: 5876516953946216778}
+  animator: {fileID: 6688909054938941202}
+--- !u!95 &6688909054938941202
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5876516953750856323}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0581bdcfd7720ff40b0cc2103e7f941d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5876516953946216779
 GameObject:
   m_ObjectHideFlags: 0
