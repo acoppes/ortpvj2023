@@ -14,8 +14,9 @@ namespace Ejercicios
             var y = Input.GetAxis("Vertical");
 
             movimiento.desiredDirection = new Vector2(x, y);
-
             weapon.isTriggerPressed = Input.GetButton("Fire1");
+
+            weapon.aimPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
     }
 }

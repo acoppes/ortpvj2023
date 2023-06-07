@@ -37,6 +37,8 @@ namespace Ejercicios
                     deathImpulseSource.GenerateImpulse();
                 }
                 
+                EventosGenerales.OnPersonajeDeath(this.gameObject, damage);
+                
                 GameObject.Instantiate(deathFxPrefab, transform.position, transform.rotation);
                 
                 GameObject.Destroy(gameObject);

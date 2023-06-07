@@ -8,6 +8,7 @@ namespace Ejercicios
         public Animator animator;
         public Movimiento movimiento;
         public Health health;
+        public Weapon weapon;
         
         private void Update()
         {
@@ -24,6 +25,22 @@ namespace Ejercicios
             if (animator != null)
             {
                 animator.SetTrigger("hit");
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            var pickup = other.GetComponentInChildren<Pickup>();
+
+            if (pickup != null)
+            {
+                var pickupWeapon = pickup.GetComponent<Weapon>();
+                if (pickupWeapon != null)
+                {
+                    weapon.SetWeapon(pickupWeapon);
+                }
+                
+                GameObject.Destroy(pickup.gameObject);
             }
         }
     }
