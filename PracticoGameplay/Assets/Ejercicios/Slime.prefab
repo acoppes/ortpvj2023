@@ -579,6 +579,7 @@ MonoBehaviour:
   animator: {fileID: 5455951836849985065}
   movimiento: {fileID: 5775394947201466792}
   health: {fileID: 5776337070567038745}
+  weapon: {fileID: 0}
 --- !u!114 &5775394947201466792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563073511e6e44e6a9c37297e2220e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 7164223749241111877}
   speed: 2
   perspectiva: 0.75
   minDistanceToTarget: 0.1

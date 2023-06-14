@@ -38,8 +38,11 @@ namespace Ejercicios
                 }
                 
                 EventosGenerales.OnPersonajeDeath(this.gameObject, damage);
-                
-                GameObject.Instantiate(deathFxPrefab, transform.position, transform.rotation);
+
+                if (deathFxPrefab != null) 
+                {
+                    GameObject.Instantiate(deathFxPrefab, transform.position, transform.rotation);
+                }
                 
                 GameObject.Destroy(gameObject);
                 return;

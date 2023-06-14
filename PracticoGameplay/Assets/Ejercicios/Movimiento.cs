@@ -5,6 +5,8 @@ namespace Ejercicios
 {
     public class Movimiento : MonoBehaviour
     {
+        public Rigidbody2D body;
+        
         public float speed;
 
         public float perspectiva = 0.5f;
@@ -22,19 +24,22 @@ namespace Ejercicios
 
         public float minDistanceToTargetSqr => minDistanceToTarget * minDistanceToTarget;
 
+        private void OnDisable()
+        {
+            walking = false;
+            body.velocity = Vector2.zero;
+        }
+
         private void FixedUpdate()
         {
             var direction = desiredDirection.normalized;
             
-            velocity = direction * speed * Time.deltaTime;
+            velocity = direction * speed;
             velocity.y *= perspectiva;
 
             walking = velocity.SqrMagnitude() > Mathf.Epsilon;
-            
-            if (walking)
-            {
-                transform.position += (Vector3)velocity;
-            }
+
+            body.velocity = velocity;
         }
     }
 }

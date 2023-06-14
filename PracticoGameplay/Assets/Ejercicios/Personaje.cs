@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Ejercicios
@@ -41,6 +42,39 @@ namespace Ejercicios
                 }
                 
                 GameObject.Destroy(pickup.gameObject);
+            }
+        }
+
+        public void Pushback(Vector2 force, float duration)
+        {
+            StartCoroutine(PusbhackSequence(force, duration));
+        }
+
+        private IEnumerator PusbhackSequence(Vector2 force, float duration)
+        {
+            movimiento.enabled = false;
+            
+            if (weapon != null)
+            {
+                weapon.enabled = false;
+            }
+            
+            var body = GetComponent<Rigidbody2D>();
+            body.bodyType = RigidbodyType2D.Dynamic;
+           //  body.velocity = Vector2.zero;
+
+            body.AddForce(force, ForceMode2D.Impulse);
+
+            yield return new WaitForSeconds(duration);
+
+            body.bodyType = RigidbodyType2D.Kinematic;
+            body.velocity = Vector2.zero;
+            
+            movimiento.enabled = true;
+            
+            if (weapon != null)
+            {
+                weapon.enabled = true;
             }
         }
     }

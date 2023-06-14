@@ -36,6 +36,7 @@ namespace Ejercicios
             if (reload.isReady && isTriggerPressed)
             {
                 var bulletObject = GameObject.Instantiate(bulletPrefab, bulletAttachPoint.position, bulletAttachPoint.rotation);
+                bulletObject.SetActive(true);
                 bulletObject.GetComponent<Bullet>().Fire(bulletAttachPoint.right);
                 reload.Reset();
                 

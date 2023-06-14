@@ -17,8 +17,8 @@ TagManager:
   - Enemigo
   - Bullet
   - Pickup
-  - 
-  - 
+  - Nubes
+  - Fondo1
   - 
   - 
   - 
@@ -41,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Nubes
+    uniqueID: 1752576563
     locked: 0
