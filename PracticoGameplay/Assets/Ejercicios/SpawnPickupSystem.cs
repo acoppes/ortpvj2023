@@ -21,7 +21,7 @@ namespace Ejercicios
         private void OnPersonajeDeath(GameObject personaje, float damage)
         {
 
-            if (UnityEngine.Random.Range(0, 1) > chance)
+            if (UnityEngine.Random.Range(0f, 1f) > chance)
                 return;
 
             var pickupPrefab = pickupsPrefabs[UnityEngine.Random.Range(0, pickupsPrefabs.Length)];

@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1436716118954211716}
   - component: {fileID: 8915411675706250393}
   m_Layer: 0
-  m_Name: raygun
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,6 +254,7 @@ MonoBehaviour:
   movimiento: {fileID: 5775394947201466792}
   health: {fileID: 830327644333764208}
   weapon: {fileID: 4074837527000383527}
+  ability: {fileID: 0}
 --- !u!114 &5775394947201466792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,8 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98bd36dd9b141de898b239d640b6df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movimiento: {fileID: 5775394947201466792}
-  weapon: {fileID: 4074837527000383527}
+  personaje: {fileID: 5775394947201466794}
 --- !u!95 &5455951836849985065
 Animator:
   serializedVersion: 5
@@ -346,6 +346,7 @@ MonoBehaviour:
   onDamageUnityEvent:
     m_PersistentCalls:
       m_Calls: []
+  invulnerable: 0
 --- !u!50 &2437865449195891679
 Rigidbody2D:
   serializedVersion: 4
@@ -458,7 +459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1901625536498939295}
-  - component: {fileID: 666785627518182166}
+  - component: {fileID: 2360640306791969994}
   m_Layer: 6
   m_Name: Target
   m_TagString: Untagged
@@ -474,14 +475,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6009711759994237989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5775394947201466795}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &666785627518182166
-CircleCollider2D:
+--- !u!70 &2360640306791969994
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -490,12 +491,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.25
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1 &6277685329099222643
 GameObject:
   m_ObjectHideFlags: 0

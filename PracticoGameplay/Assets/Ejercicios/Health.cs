@@ -18,8 +18,13 @@ namespace Ejercicios
 
         public UnityEvent<float> onDamageUnityEvent;
 
+        public bool invulnerable;
+
         public void Damage(float damage)
         {
+            if (invulnerable)
+                return;
+            
             current -= damage;
 
             if (damage > 0)

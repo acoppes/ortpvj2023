@@ -6,14 +6,15 @@ namespace Ejercicios
     public class ComportamientoManager : MonoBehaviour
     {
         private List<ComportamientoBase> comportamientos = new List<ComportamientoBase>();
-        
+
+        public Transform comportamientosParent;
         public ComportamientoBase comportamiento;
 
         private Transform chasePlayerTransform;
 
         private void Awake()
         {
-            GetComponentsInChildren(comportamientos);
+            comportamientosParent.GetComponentsInChildren(comportamientos);
         }
 
         private void FixedUpdate()

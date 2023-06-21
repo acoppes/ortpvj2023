@@ -1,22 +1,18 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace Ejercicios
 {
-    public class ComportamientoChasePlayer : ComportamientoBase
+    public class ComportamientoDispararPlayer : ComportamientoBase
     {
         public Collider2D detectorPlayer;
         
         public Cooldown cooldown;
-        public Cooldown stopCooldown;
         
         private Transform playerTransform;
-        
-        public Movimiento movimiento;
 
-        [FormerlySerializedAs("comportamientoManage")] 
-        [FormerlySerializedAs("enemigo")] 
+        public Weapon weapon;
+
         public ComportamientoManager comportamientoManager;
 
         private Collider2D[] colliders = new Collider2D[1];
@@ -55,28 +51,27 @@ namespace Ejercicios
             {
                 return false;
             }
+
+            weapon.aimPosition = playerTransform.position;
+            weapon.isTriggerPressed = true;
             
-            movimiento.desiredDirection = Vector2.zero;
-            
-            stopCooldown.current += Time.deltaTime;
-            
-            var distance = playerTransform.position - transform.position;
-            var inTargetPosition = distance.sqrMagnitude < movimiento.minDistanceToTargetSqr;
-            
-            if (!inTargetPosition && !stopCooldown.isReady)
+            var contactFilter2D = new ContactFilter2D()
             {
-                movimiento.desiredDirection = distance.normalized;
-                return true;
-            }
-            else
+                useLayerMask = true,
+                layerMask = LayerMask.GetMask("Player"),
+                useTriggers = true
+            };
+            
+            if (Physics2D.OverlapCollider(detectorPlayer, contactFilter2D, colliders) == 0)
             {
                 cooldown.Reset();
-                stopCooldown.Reset();
-
                 playerTransform = null;
-                
+               // weapon.aimPosition = transform.position + new Vector3(1, 0, 0);
+                weapon.isTriggerPressed = false;
                 return false;
             }
+
+            return true;
         }
     }
 }

@@ -10,14 +10,35 @@ namespace Ejercicios
         public Movimiento movimiento;
         public Health health;
         public Weapon weapon;
+        public Ability ability;
+
+        public PowerIcon abilityIcon;
         
+        // private void Awake()
+        // {
+        //     var abilityIconObject = GameObject.Find("PowerIcon_Shield");
+        //
+        //     if (abilityIconObject != null)
+        //     {
+        //         abilityIcon = abilityIconObject.GetComponent<PowerIcon>();
+        //     }
+        // }
+
         private void Update()
         {
-            animator.SetBool("walking", movimiento.walking);
-            
-            if (Mathf.Abs(movimiento.velocity.x) > 0)
+            if (movimiento != null)
             {
-                transform.localEulerAngles = new Vector3(0, movimiento.velocity.x < 0 ? 180 : 0, 0);
+                animator.SetBool("walking", movimiento.walking);
+
+                if (Mathf.Abs(movimiento.velocity.x) > 0)
+                {
+                    transform.localEulerAngles = new Vector3(0, movimiento.velocity.x < 0 ? 180 : 0, 0);
+                }
+            }
+
+            if (abilityIcon != null)
+            {
+                abilityIcon.UpdateFromAbility(ability);
             }
         }
 
@@ -40,7 +61,18 @@ namespace Ejercicios
                 {
                     weapon.SetWeapon(pickupWeapon);
                 }
-                
+
+                var pickupAbility = pickup.GetComponentInChildren<Ability>();
+                if (pickupAbility != null)
+                {
+                    pickupAbility.transform.SetParent(transform, false);
+                    pickupAbility.transform.localPosition = new Vector3(0, 0, 0);
+
+                    ability = pickupAbility;
+                    
+                    ability.OnAbilitySet(this);
+                }
+
                 GameObject.Destroy(pickup.gameObject);
             }
         }
